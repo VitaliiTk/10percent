@@ -2,6 +2,7 @@
   "name": "10percent",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "dependencies": {
     "express": "^5.1.0"
   },
