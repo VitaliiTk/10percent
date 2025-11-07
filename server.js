@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-const PORT = 8080
+const PORT = 80
 
 // Указываем, что движок шаблонов — ejs
 app.set('view engine', 'ejs')
