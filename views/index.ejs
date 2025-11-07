@@ -7,7 +7,60 @@
     <link rel="stylesheet" href="/style/main.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <h2><%= message %></h2>
+    <header>
+      <h1>MotoBoard</h1>
+      <nav>
+        <a href="#">Объявления</a>
+        <a href="#">Продать</a>
+        <a href="#">Профиль ▼</a>
+      </nav>
+    </header>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Поиск..." />
+    </div>
+
+    <div class="motorcycles">
+      <h2>Популярные мотоциклы</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://via.placeholder.com/220x140?text=Harley-Davidson"
+            alt="Harley-Davidson"
+          />
+          <h3>Harley-Davidson</h3>
+          <p>2018 · 15,000 км</p>
+          <div class="price">₸2.500.000</div>
+          <button>Подробнее</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/220x140?text=BMW" alt="BMW" />
+          <h3>BMW</h3>
+          <p>2020 · 8,000 км</p>
+          <div class="price">₸3.200.000</div>
+          <button>Подробнее</button>
+        </div>
+        <div class="card">
+          <img
+            src="https://via.placeholder.com/220x140?text=Honda"
+            alt="Honda"
+          />
+          <h3>Honda</h3>
+          <p>2019 · 12,000 км</p>
+          <div class="price">₸1.800.000</div>
+          <button>Подробнее</button>
+        </div>
+        <div class="card">
+          <img
+            src="https://via.placeholder.com/220x140?text=Ducati"
+            alt="Ducati"
+          />
+          <h3>Ducati</h3>
+          <p>2021 · 5,000 км</p>
+          <div class="price">₸3.600.000</div>
+          <button>Подробнее</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
