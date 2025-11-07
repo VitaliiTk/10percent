@@ -7,7 +7,8 @@ const PORT = 3000
 app.set('view engine', 'ejs')
 
 app.get('/', (_, res) => {
-  res.send('<h1>MotoBoard test server is running</h1>')
+  const data = { title: `MotoBoard`, message: `test VDS server` }
+  res.render('index.ejs', data) // index.ejs в папке views
 })
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
