@@ -1,10 +1,14 @@
 const express = require('express')
 const app = express()
+const path = require('path')
 
 const PORT = 3000
 
 // Указываем, что движок шаблонов — ejs
 app.set('view engine', 'ejs')
+
+// Подключаем папку public для статических файлов
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (_, res) => {
   const data = { title: `MotoBoard`, message: `test VDS server` }
